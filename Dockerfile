@@ -8,3 +8,4 @@ RUN cd /opt ; git clone https://github.com/tpruvot/cpuminer-multi
 RUN cd /opt/cpuminer-multi ; ./build.sh
 RUN cd /opt/cpuminer-multi ; make install
 
+ENTRYPOINT /usr/local/bin/cpuminer
