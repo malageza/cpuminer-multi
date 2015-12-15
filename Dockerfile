@@ -7,5 +7,3 @@ RUN apt-get -y install  git automake build-essential  libcurl4-openssl-dev libnc
 RUN cd /opt ; git clone https://github.com/tpruvot/cpuminer-multi
 RUN cd /opt/cpuminer-multi ; ./build.sh
 RUN cd /opt/cpuminer-multi ; make install
-
-ENTRYPOINT /usr/local/bin/cpuminer
